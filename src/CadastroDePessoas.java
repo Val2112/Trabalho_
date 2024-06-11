@@ -14,5 +14,15 @@ import java.util.List;
         public List<Pessoa> listarPessoas() {
             return pessoas;
         }
+        public void alterarPessoa(String cpf, Pessoa novaPessoa) {
+            for (Pessoa pessoa : pessoas) {
+                if (pessoa.getCpf().equals(cpf)) {
+                    pessoa.setNome(novaPessoa.getNome());
+                    pessoa.setIdade(novaPessoa.getIdade());
+                    pessoa.setCpf(novaPessoa.getCpf());
+                    return;
+                }
+            }
+        }
 
     }
