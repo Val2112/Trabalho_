@@ -24,5 +24,7 @@ import java.util.List;
                 }
             }
         }
-
+        public void excluirPessoa(String cpf) {
+            pessoas.removeIf(p -> p.getCpf().equals(cpf));
+        }
     }
