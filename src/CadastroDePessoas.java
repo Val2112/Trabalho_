@@ -11,4 +11,8 @@ import java.util.List;
         public void adicionarPessoa(Pessoa pessoa) {
             pessoas.add(pessoa);
         }
+        public List<Pessoa> listarPessoas() {
+            return pessoas;
+        }
+
     }
